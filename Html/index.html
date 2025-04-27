@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+    <style>
+        #maindiv{
+            position: relative;
+        }
+        #bgImg{
+            position: absolute;
+            height: 98vh;
+            width: 99vw;
+            z-index: -1;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 0.5em;
+            width: 98.9%;
+            height: 50px;
+        }
+        .logo{
+            padding: 0.5em;
+        }
+        .nav{
+            display: flex;
+            gap: 40px;
+            padding: 0.5em;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        #adi{
+            height: 400px;
+            margin: 1em 0em 0em 5em;
+            border-radius: 50%;
+        }
+        .p1{
+            font-size: 1.5rem;
+            color: white;
+            margin-left: 2em;
+        }
+        h1{
+            color: white;
+            margin: 3em 0em 0em 5em;
+            font-size: 2.5rem;
+        }
+        .aside1{
+            height: 120px;
+            width: 300px;
+            background-color: bisque;
+            margin: 2em 0em 0em 85em;
+            padding: 0.01em 0em 0em 1.5em;
+        }
+        .section1{
+            display: flex;
+        }
+        .article{
+            background-color: rgb(112, 161, 207);
+            width: 80%; 
+            font-size: 1rem;
+            margin-left: 2em;
+            padding: 1em;
+        }
+        h2{
+            color: white;
+        }
+        .p2{
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="maindiv">
+        
+        <img src="./bgBlue.webp" alt="bg" id="bgImg">
+    
+        <!-- header, nav, hero, main, section, article, aside, footer -->
+        <header class="header">
+            
+            <div class="logo">
+               <a href="#">ASC</a>
+            </div>
+            
+            <div class="nav">
+               <a href="#">HOME</a>
+               <a href="#">PROFILE</a>
+               <a href="#">ACHIEVEMENTS</a>
+               <a href="#">CONTACT</a>
+            </div>
+            
+        </header>
+     
+     
+     <main>
+        <section class="section1">
+            <h1>Hi, I'm Aditya Singh Chauhan<br>Full Stack Mern Developer</h1>
+            <img src="./ADI.jpg" alt="Aditya" id="adi">
+        </section>
+            
+        <!-- Article tag -->
+        <section class="section2">
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi natus rerum recusandae eriut
+            </p>
+            <article class="article">
+                <h2>ARTICLE TAG => Full Stack Mern Developer Role</h2>
+                <p class="p2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.Dignissimosdeserunt necessitatibus perferendis facere dicta, similique  nullarerum, vero voluptate doloremque
+                    molestias, beatae quas accusantiumquaerat magni mollitia aperiam aliquam numquam.
+                </p>
+            </article>
+
+            <!-- Aside tag -->
+            
+            <aside class="aside1">
+                <h3><b>ASIDE TAG => KEY POINTS</b></h3>
+                <p>1- Lorem ipsum dolor sit amet consectetur.</p>
+                <p>2- Lorem ipsum dolor sit amet.</p>
+            </aside>
+            
+        </section>
+        
+     </main>
+    </div>
+</body>
+</html>
